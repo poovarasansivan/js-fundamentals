@@ -4,13 +4,13 @@
 
 # DOM Elements and Their Purpose
 
-| DOM Element | Selection Method          | Purpose                                    |
-| ----------- | ------------------------- | ------------------------------------------ |
-| display     | getElementById("display") | Shows the user’s input and the result      |
-| buttons     | querySelectorAll(".btn")  | Stores all number and operator buttons     |
-| clearBtn    | getElementById("clear")   | Clears the display (AC button)             |
-| deleteBtn   | getElementById("delete")  | Removes the last character (DE button)     |
-| equalBtn    | getElementById("equal")   | Evaluates the expression when = is clicked |
+| DOM Element | Selection Method            | Purpose                                    |
+| ----------- | --------------------------- | ------------------------------------------ |
+| display     | `getElementById("display")` | Shows the user’s input and the result      |
+| buttons     | `querySelectorAll(".btn")`  | Stores all number and operator buttons     |
+| clearBtn    | `getElementById("clear")`   | Clears the display (AC button)             |
+| deleteBtn   | `getElementById("delete")`  | Removes the last character (DE button)     |
+| equalBtn    | `getElementById("equal")`   | Evaluates the expression when = is clicked |
 
 # Calculator Demo
 

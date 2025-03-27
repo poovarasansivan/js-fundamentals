@@ -14,7 +14,7 @@
 | `addEventListener()`                 | Allowing them to respond html elements for user actions like clicks, keypresses, or mouse movements. |
 | `ev.target.parentElement.remove();`  | Removes the specific elements from the parent html elements.                                         |
 | `localStorage.setItem('data',value)` | It stores the value in storage of a browser for later usage.                                         |
-| `localStorage.getItem('data')        | It retrives the stored data from the browser storage.                                                |
+| `localStorage.getItem('data')`        | It retrives the stored data from the browser storage.                                                |
 
 
 # Task Outputs
