@@ -16,49 +16,53 @@
 
 - Selecting Elements using `getElementById()`.
 
-`const tempdivinfo = document.getElementById("temp-div");
+```
+const tempdivinfo = document.getElementById("temp-div");
 const weatherinfodiv = document.getElementById("weather-info");
 const weathericon = document.getElementById("weather-icon");
 const hourlyforecast = document.getElementById("hourly-forecast");`
-
+```
 - To clear the previsiously displayed data. By clearing the existing data in the html elements.
 
-`
+```
 weatherinfodiv.innerHTML = "";
 tempdivinfo.innerHTML = "";
 hourlyforecast.innerHTML = "";
-
-`
+```
 
 - If the data is not recieved from api then the following code snippet will handle that situation.
 
-`weatherinfodiv.innerHTML = "";
+```
+weatherinfodiv.innerHTML = "";
 tempdivinfo.innerHTML = "";
 hourlyforecast.innerHTML = "";`
+```
 
 - After Fetching the weather data it will etracts the city name, temperature (in Celsius), weather description, and icon code from the response.
 
-`const cityname = data.name;
+```
+const cityname = data.name;
 const temperature = Math.round(data.main.temp - 273.15);
 const description = data.weather[0].description;
 const iconcode = data.weather[0].icon;
 const iconurl =`http://openweathermap.org/img/wn/${iconcode}@4x.png`;
-`
+```
 
 - Updating the DOM elements. Uses innerHTML to update temperature and weather details.
 
-`const temperaturehtml =`<p>${temperature}°C</p>`;
+```
+const temperaturehtml =`<p>${temperature}°C</p>`;
 const weatherhtml = `<p>${cityname}</p><p>${description}</p>`;
 tempdivinfo.innerHTML = temperaturehtml;
 weatherinfodiv.innerHTML = weatherhtml;
 weathericon.src = iconurl;
 weathericon.alt = description;
 
-`
+```
 
 - Extracts the forecast information and updates to the inner html elements.
 
-`next24hours.forEach((item) => {
+```next24hours.forEach((item) => {
     const dateTime = new Date(item.dt * 1000);
     const hours = dateTime.getHours();
     const temperature = Math.round(item.main.temp - 273.15);
@@ -72,7 +76,7 @@ const hourlyhtml = `<div class="hourly-item">
 hourlyforecast.innerHTML += hourlyhtml;
 });
 
-`
+```
 
 - The code interacts with DOM elements to fetch data, display results, and update the UI.
 
