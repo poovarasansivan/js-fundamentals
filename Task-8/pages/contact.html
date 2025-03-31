@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA - Contact Us</title>
+</head>
+<style>
+    #contact {
+        margin: 100px;
+        text-align: center;
+        align-items: center;
+    }
+
+    #contact h2 {
+        color: rgb(36, 118, 219);;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .contact-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 20px;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .contact-form button {
+        background: rgb(36, 118, 219);;
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+        background: rgb(36, 118, 219);;
+    }
+
+    .contact-info {
+        max-width: 400px;
+        text-align: left;
+    }
+
+    .contact-info h3 {
+        font-size: 22px;
+        color: rgb(36, 118, 219);;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+        color: #333;
+        line-height: 1.6;
+    }
+</style>
+
+<body>
+
+    <section id="contact" class="page">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Reach out to us via the form below or contact us directly.</p>
+
+            <div class="contact-content">
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+
+                <div class="contact-info">
+                    <h3>Our Office</h3>
+                    <p><strong>Address:</strong> 123 Street, Chennai</p>
+                    <p><strong>Email:</strong> contact@XYZ.com</p>
+                    <p><strong>Phone:</strong> +918667536844</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
