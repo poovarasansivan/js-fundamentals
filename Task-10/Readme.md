@@ -5,6 +5,7 @@
 
 ## Project Directory
 
+```
 task-10/
 │
 ├── index.html                 # Homepage
@@ -35,7 +36,7 @@ task-10/
 │   └── newproducts            # Contains the images for newly launched products
 |
 └── Readme.md                  # Documentation of this project.
-
+```
 
 ## Features 
 
@@ -58,14 +59,14 @@ task-10/
 
 ## API Endpoints Used
 
-const Laptopurl       = `"https://dummyjson.com/products/category/laptops";`
-const Smartphoneurl   = `"https://dummyjson.com/products/category/smartphones";`
-const Furnitureurl    = `"https://dummyjson.com/products/category/furniture";`
-const Lightingurl     = `"https://dummyjson.com/products/category/home-decoration";`
-const Mensurl         = `"https://dummyjson.com/products/category/mens-shirts";`
-const Womensurl       = `"https://dummyjson.com/products/category/womens-dresses";`
-const Fragrancesurl   = `"https://dummyjson.com/products/category/fragrances";`
-const Shoesurl        = `"https://dummyjson.com/products/category/mens-shoes";`
+- const Laptopurl       = `"https://dummyjson.com/products/category/laptops";`
+- const Smartphoneurl   = `"https://dummyjson.com/products/category/smartphones";`
+- const Furnitureurl    = `"https://dummyjson.com/products/category/furniture";`
+- const Lightingurl     = `"https://dummyjson.com/products/category/home-decoration";`
+- const Mensurl         = `"https://dummyjson.com/products/category/mens-shirts";`
+- const Womensurl       = `"https://dummyjson.com/products/category/womens-dresses";`
+- const Fragrancesurl   = `"https://dummyjson.com/products/category/fragrances";`
+- const Shoesurl        = `"https://dummyjson.com/products/category/mens-shoes";`
 
 ## Functions
 
@@ -142,7 +143,7 @@ const Shoesurl        = `"https://dummyjson.com/products/category/mens-shoes";`
       - Pressing Enter in #searchInput
       - Clicking #filterButton
 
-      ```
+```
       function applyFilters() {
   const searchTerm = document.getElementById("searchInput").value.toLowerCase();
   const selectedCategory = document.getElementById("categoryFilter").value;
@@ -181,7 +182,7 @@ const Shoesurl        = `"https://dummyjson.com/products/category/mens-shoes";`
 
   displayProducts(filtered);
   }
-    ```
+```
 
 ## Summarization
 
